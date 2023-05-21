@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>موزه 3 بعدی پروژه های پارس تابلو</title>
+		<link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="3DArtMuseum.css">
+		<style>
+			*{font-family: vazir!important;}
+			#myVideo {
+             position: fixed;
+             right: 0;
+             bottom: 0;
+             min-width: 100%; 
+             min-height: 100%;
+                 }
+		</style>
+	</head>
+	<body>
+		<div id="pleasewait"><table><tr><td><video autoplay muted loop id="myVideo">
+			<source src="124.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		  </video><br/><br/>نمایشگاه پروژه های شرکت پارس تابلو</b>.<br/><br/> برنامه نویسی و عکاسی : الیار علیزاده</b>.</td></tr></table><div id="pleasewaitcontainer"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div>
+
+		<div id="buttonenter"><div>نمایشگاه پروژه های پارس تابلو</div></div>
+		<div id="content"><div id="container"></div></div>
+		<div id="controls"><div id="controls_minus"></div><div id="controls_plus"></div></div>
+		<div id="info"><div id="infotext"></div></div>
+		<div id="about">Elyar ALizadeh</div>
+
+		<script src="3DArtMuseumPleaseRotate.js"></script>
+		<script src="3DArtMuseum.js"></script>
+		<script>
+
+			drawRoom();
+
+			addToLeft(45,  200, "Art_01.png", "#", "پروژه پایپ جکینگ سیرجان");
+			addToLeft(22,  125, "Art_02.png", "#", "پروژه 2148 واحدی مسکن ملی پرند");
+			addToLeft(20,   50, "Art_03.jpg", "#", "پروژه خط انتقال و پست برق بندر گوادر پاکستان");
+			addToLeft(46,  -50, "Art_04.jpg", "#", "نیروگاه گازسوز دیبیس عراق");
+			addToLeft(28, -160, "Art_05.jpg", "#", "نیروگاه آبی هیدرو الکتریک چک وردک افغانستان");
+
+			addToFront(40, -320, "Art_06.jpg", "#", "خط انتقال برق ارمنستان");
+			addToFront(27, -250, "Art_07.jpg", "#", "پست 230 کیلوواتی بید بلند استان خوزستان");
+			addToFront(53, -170, "Art_08.jpg", "#", "برق رسانی به بیش از 100 روستای سریلانکا");
+			addToFront(47,  -80, "Art_09.jpg", "#", "مسیر انتقال آب دریای عمان به صنایع اصفهان");
+			addToFront(36,    0, "Art_10.jpg", "#", "مهندس محمد پارسا، مالک و موسس مجموعه بلواندپی و پارس تابلو، عضو هیئت موسس و رئیس سابق هیئت مدیره سندیکای صنعت برق ایران، رئیس هیئت مدیره فدراسیون صادرات انرژی و صنایع وابسته و یکی از فعالان بنام و موثر بخش خصوصی صنعت برق و انرژی کشور، روز سوم سال 1401 خورشیدی دار فانی را وداع گفت و صنعت برق ایرانمرحوم محمد پارسا که از فعالان حوزه تشکلی صنعت برق بودند و اولین سنگ بنای سندیکای صنعت برق ایران را در کنار هم‌قطاران‌شان بنا نهادند، از اصلی‌ترین بنیانگذاران فدراسیون صادرات انرژی و صنایع وابسته و انجمن تابلوسازان نیز محسوب می‌شوند. ایشان اولین رییس کمیسیون انرژی اتاق بازرگانی تهران و نخستین نماینده بخش خصوصی در شورای گفتگوی دولت و بخش خصوصی نیز بودند");
+
+			addToRight(47, -160, "Art_11.jpg", "#", "نیروگاه خورشیدی 40 مگاواتی سیرجان");
+			addToRight(50,  -50, "Art_12.jpg", "#", "کمربندی سیرجان،گلگهر");
+			addToRight(37,   50, "Art_13.jpg", "#", "نیروگاه گازسوز گل گهر");
+			addToRight(26,  125, "Art_14.jpg", "#", "تابلو های برق و کابل کشی پالایشگاه نفت نخل آسماری،بندر ماهشهر");
+			addToRight(21,  200, "Art_15.jpg", "#", "پست 300 کیلووات نوروان ارمنستان");
+
+			addToBack(42,    0, "Art_16.jpg", "#", "تابلو های برق مرکز آبرسانی غدیر خم استان خوزستان");
+			addToBack(42,  -80, "Art_17.jpg", "#", "نیروگاه برقی و سد آبی دهنه دره افغانستان");
+			addToBack(25, -170, "Art_18.jpg", "#", "مرکز تاسیسات و رصدخانه نیروگاه خورشیدی سیرجان");
+			addToBack(42, -250, "Art_19.jpg", "#", "گروه بلو اند پی در یک نگاه");
+			addToBack(27, -320, "Art_20.jpg", "#", "راهی جز موفقیت ندارید!");
+
+			renderRoom();
+
+			welcome("#","در این موزه سعی شده بخشی از پروژه های انجام شده توسط گروه بلو اند پی را در قالب یک نمایشگاه 3 بعدی برای دیدن شما فراهم شده است");
+
+		</script>
+	</body>
+</html>
